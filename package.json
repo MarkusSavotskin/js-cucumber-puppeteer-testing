@@ -1,0 +1,21 @@
+{
+  "name": "js-cucumber-puppeteer-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber-report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supercharge/strings": "^2.0.0",
+    "chai": "^4.3.10",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.1",
+    "puppeteer": "^21.5.2"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1"
+  }
+}

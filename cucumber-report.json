@@ -1,0 +1,191 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search product in Daraz",
+    "line": 1,
+    "id": "search-product-in-daraz",
+    "tags": [],
+    "uri": "features\\search.feature",
+    "elements": [
+      {
+        "id": "search-product-in-daraz;verify-result-for-daraz-product-search",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify result for daraz product search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\suppport\\search.test.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 821000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\suppport\\searchForProduct.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User visits daraz website",
+            "match": {
+              "location": "features\\suppport\\search.test.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8420000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User search by product name",
+            "match": {
+              "location": "features\\suppport\\search.test.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6625000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Count the results",
+            "match": {
+              "location": "features\\suppport\\search.test.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 948000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clears first search from input",
+            "match": {
+              "location": "features\\suppport\\search.test.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6427000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Count the result again",
+            "match": {
+              "location": "features\\suppport\\search.test.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 883000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Click on something Search for a product in Amazon",
+    "line": 1,
+    "id": "click-on-something-search-for-a-product-in-amazon",
+    "tags": [],
+    "uri": "features\\searchForProduct.feature",
+    "elements": [
+      {
+        "id": "click-on-something-search-for-a-product-in-amazon;open-first-search-result-on-amazon",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open first search result on Amazon",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\suppport\\search.test.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\suppport\\searchForProduct.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits Amazon website",
+            "match": {
+              "location": "features\\suppport\\searchForProduct.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Users searches by product name",
+            "match": {
+              "location": "features\\suppport\\searchForProduct.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Click on the first result",
+            "match": {
+              "location": "features\\suppport\\searchForProduct.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 430000000,
+              "error_message": "TypeError: selector.startsWith is not a function\n    at getQueryHandlerAndSelector (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\common\\GetQueryHandler.js:45:30)\n    at CdpElementHandle.$ (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\ElementHandle.js:386:107)\n    at CdpElementHandle.<anonymous> (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\ElementHandle.js:262:49)\n    at async CdpFrame.$ (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Frame.js:386:20)\n    at async CdpFrame.click (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Frame.js:711:63)\n    at async World.<anonymous> (C:\\Users\\Markus Savotškin\\WebstormProjects\\js-cucumber-puppeteer-testing\\features\\suppport\\searchForProduct.js:39:5)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
